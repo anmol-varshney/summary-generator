@@ -2,7 +2,7 @@ from openai import OpenAI
 
 def generate_content(prompt):
 
-  api_key = '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'
+  api_key = st.secrets["openai"]["api_key"]
 
   client = OpenAI(
       api_key=api_key
